@@ -6,11 +6,10 @@ export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'About', href: '/about' },
-    { name: 'Community', href: '/community' },
+    { name: 'Listen', href: '#audio-comparison' },
+    { name: 'About', href: '#about' },
+    { name: 'Equipment', href: '#equipment' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -36,12 +35,14 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="https://www.skool.com/the-sound-society"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="button-primary"
               >
-                Book Now
-              </Link>
+                Subscribe
+              </a>
             </div>
 
             {/* Mobile Navigation */}
@@ -66,13 +67,15 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="https://www.skool.com/the-sound-society"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block mx-6 my-4 button-primary text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Book Now
-              </Link>
+                Subscribe
+              </a>
             </div>
           )}
         </div>
