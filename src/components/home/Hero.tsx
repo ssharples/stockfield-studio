@@ -9,7 +9,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/hero%20banner%20image.jpg)',
+          backgroundImage: 'url(https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/website%20banner.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
