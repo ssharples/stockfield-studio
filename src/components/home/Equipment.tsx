@@ -10,10 +10,13 @@ export default function Equipment() {
             <div key={index} className="bg-dark-800 rounded-lg p-6">
               <div className="aspect-square bg-dark-700 rounded-lg mb-4 overflow-hidden">
                 <img 
-                  src={item.imageUrl} 
+                  src={item.imageUrl}
+                  srcSet={item.srcSet}
                   alt={item.name}
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  width={item.width}
+                  height={item.height}
                 />
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">{item.name}</h3>

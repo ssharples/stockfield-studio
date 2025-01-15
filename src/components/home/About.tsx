@@ -25,8 +25,16 @@ export default function About() {
             <div className="relative w-48 h-48 mx-auto mb-4">
               <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
               <img
-                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.png"
+                srcSet="
+                  https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=400 400w,
+                  https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=800 800w,
+                  https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=1200 1200w
+                "
+                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=800"
                 alt="Scott Sharples"
+                width={800}
+                height={800}
+                loading="lazy"
                 className="relative rounded-full w-full h-full object-cover"
               />
             </div>
@@ -47,8 +55,16 @@ export default function About() {
             <div className="relative w-48 h-48 mx-auto mb-4">
               <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
               <img
-                src="https://via.placeholder.com/400" // Placeholder for Rocco's image
+                srcSet="
+                  https://via.placeholder.com/400.webp 400w,
+                  https://via.placeholder.com/800.webp 800w,
+                  https://via.placeholder.com/1200.webp 1200w
+                "
+                src="https://via.placeholder.com/800.webp"
                 alt="Rocco Harris"
+                width={800}
+                height={800}
+                loading="lazy"
                 className="relative rounded-full w-full h-full object-cover"
               />
             </div>
@@ -69,8 +85,16 @@ export default function About() {
             <div className="relative w-48 h-48 mx-auto mb-4">
               <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
               <img
-                src="https://via.placeholder.com/400" // Placeholder for Bigheck's image
+                srcSet="
+                  https://via.placeholder.com/400.webp 400w,
+                  https://via.placeholder.com/800.webp 800w,
+                  https://via.placeholder.com/1200.webp 1200w
+                "
+                src="https://via.placeholder.com/800.webp"
                 alt="Bigheck"
+                width={800}
+                height={800}
+                loading="lazy"
                 className="relative rounded-full w-full h-full object-cover"
               />
             </div>
