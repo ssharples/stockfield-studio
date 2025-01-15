@@ -41,7 +41,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="button-primary"
               >
-                Subscribe
+                Unlimited Mixing
               </a>
             </div>
 

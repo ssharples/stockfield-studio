@@ -5,7 +5,7 @@ import StatsCard from './StatsCard';
 
 export default function About() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">
           <span className="bg-gradient-to-r from-chrome-light to-chrome-dark bg-clip-text text-transparent">

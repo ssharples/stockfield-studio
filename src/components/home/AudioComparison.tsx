@@ -22,7 +22,7 @@ export default function AudioComparison({ beforeUrl, afterUrl }: AudioComparison
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div id="audio-comparison" className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <h4 className="text-xl font-semibold mb-4">Before</h4>
         <AudioPlayer 

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] text-gray-300 py-16 border-t border-gray-800">
+    <footer id="contact" className="bg-[#0a0a0a] text-gray-300 py-16 border-t border-gray-800">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Map Section */}
