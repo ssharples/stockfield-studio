@@ -25,12 +25,7 @@ export default function About() {
             <div className="relative w-48 h-48 mx-auto mb-4">
               <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
               <img
-                srcSet="
-                  https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=400 400w,
-                  https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=800 800w,
-                  https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=1200 1200w
-                "
-                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.webp?width=800"
+                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.png"
                 alt="Scott Sharples"
                 width={800}
                 height={800}
