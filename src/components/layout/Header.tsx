@@ -27,13 +27,13 @@ export default function Header() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navigation.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.href}
+                  href={item.href}
                   className="nav-link px-3 py-2 hover:bg-white/5"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
               <a
                 href="https://www.skool.com/the-sound-society"
@@ -41,7 +41,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="button-primary"
               >
-                Unlimited Mixing
+                Subscribe
               </a>
             </div>
 
@@ -58,14 +58,14 @@ export default function Header() {
           {isOpen && (
             <div className="md:hidden absolute top-full left-0 w-full glass-panel shadow-glass mt-2">
               {navigation.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.href}
+                  href={item.href}
                   className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-white/5 transition-all first:rounded-t-xl last:rounded-b-xl"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
               <a
                 href="https://www.skool.com/the-sound-society"
