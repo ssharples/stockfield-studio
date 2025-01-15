@@ -41,7 +41,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="button-primary"
               >
-                Subscribe
+                Unlimited Mixing
               </a>
             </div>
 
@@ -56,12 +56,12 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="md:hidden absolute top-full left-0 w-full glass-panel shadow-glass mt-2">
+            <div className="md:hidden fixed top-16 left-0 w-full bg-gray-900/95 backdrop-blur z-50 py-2">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-6 py-3 text-gray-300 hover:text-white hover:bg-white/5 transition-all first:rounded-t-xl last:rounded-b-xl"
+                  className="block px-6 py-4 text-gray-300 hover:text-white hover:bg-white/5 transition-all border-b border-white/10"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
@@ -71,7 +71,7 @@ export default function Header() {
                 href="https://www.skool.com/the-sound-society"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mx-6 my-4 button-primary text-center"
+                className="block mx-6 my-4 px-6 py-3 button-primary text-center rounded-lg"
                 onClick={() => setIsOpen(false)}
               >
                 Subscribe
