@@ -35,18 +35,14 @@ export default function Hero() {
             Let's create something extraordinary together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              to="/services"
+            <a
+              href="https://skool.com/the-sound-society"
+              target="_blank"
+              rel="noopener noreferrer"
               className="button-primary"
             >
-              Get Started
-            </Link>
-            <Link
-              to="/portfolio"
-              className="button-secondary"
-            >
-              View Portfolio
-            </Link>
+              Get Unlimited Mix and Masters
+            </a>
           </div>
         </motion.div>
       </div>
