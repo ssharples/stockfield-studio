@@ -17,11 +17,12 @@ export default function Header() {
       <nav className="glass-panel shadow-glass">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-2 group">
-              <Headphones className="w-8 h-8 text-chrome-light group-hover:text-chrome-main transition-colors" />
-              <span className="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                The Studio Stockfield
-              </span>
+            <Link to="/" className="group">
+              <img 
+                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/stockfield%20studio%20logo%202.png?t=2025-01-16T13%3A38%3A32.364Z"
+                alt="Stockfield Studio Logo"
+                className="h-12 w-auto transition-opacity group-hover:opacity-90"
+              />
             </Link>
 
             {/* Desktop Navigation */}
