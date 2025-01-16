@@ -49,8 +49,8 @@ export default function Hero() {
 
       {/* Decorative Elements */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-dark-900 to-transparent" />
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-chrome-main/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-chrome-dark/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] max-w-[384px] max-h-[384px] bg-chrome-main/20 rounded-full blur-3xl animate-pulse translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 left-0 w-[50vw] h-[50vw] max-w-[384px] max-h-[384px] bg-chrome-dark/20 rounded-full blur-3xl animate-pulse -translate-x-1/2 translate-y-1/2" />
     </div>
   );
 }
