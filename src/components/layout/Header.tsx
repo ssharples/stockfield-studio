@@ -57,7 +57,7 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="md:hidden fixed top-20 left-0 w-full glass-panel backdrop-blur-lg bg-white/5 shadow-glass z-50 py-2">
+            <div className="md:hidden fixed top-20 left-0 w-full bg-gray-900/95 backdrop-blur-lg z-50 py-2">
               {navigation.map((item) => (
                 <a
                   key={item.name}
