@@ -21,7 +21,7 @@ export default function Header() {
               <img 
                 src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/stockfield%20studio%20logo%202.png?t=2025-01-16T13%3A38%3A32.364Z"
                 alt="Stockfield Studio Logo"
-                className="h-12 w-auto transition-opacity group-hover:opacity-90"
+                className="h-14.4 w-auto animate-spin-slow transition-opacity group-hover:opacity-90"
               />
             </Link>
 
