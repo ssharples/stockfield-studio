@@ -13,6 +13,7 @@
     "@types/node": "^22.10.6",
     "@types/nodemailer": "^6.4.17",
     "axios": "^1.7.9",
+    "buffer": "^6.0.3",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
     "nodemailer": "^6.9.16",

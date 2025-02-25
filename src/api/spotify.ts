@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Buffer } from 'buffer';
 
 const SPOTIFY_CLIENT_ID = '77824daf23e946c8a13b88913ef482b8';
 const SPOTIFY_CLIENT_SECRET = 'b6794beada0640b78f444fd42acd6a37';
