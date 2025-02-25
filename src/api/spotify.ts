@@ -1,13 +1,27 @@
 import axios from 'axios';
 import { Buffer } from 'buffer';
 
-const SPOTIFY_CLIENT_ID = '77824daf23e946c8a13b88913ef482b8';
-const SPOTIFY_CLIENT_SECRET = 'b6794beada0640b78f444fd42acd6a37';
+const SPOTIFY_CLIENT_ID = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
+const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
+
+if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET) {
+  throw new Error('Missing Spotify API credentials. Please set NEXT_PUBLIC_SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET environment variables.');
+}
 
 let accessToken: string | null = null;
 let tokenExpiration: number | null = null;
 
+let lastRequestTime = 0;
+const RATE_LIMIT_DELAY = 1000; // 1 second between requests
+
 async function getAccessToken() {
+  // Rate limit protection
+  const now = Date.now();
+  const timeSinceLastRequest = now - lastRequestTime;
+  if (timeSinceLastRequest < RATE_LIMIT_DELAY) {
+    await new Promise(resolve => setTimeout(resolve, RATE_LIMIT_DELAY - timeSinceLastRequest));
+  }
+  lastRequestTime = Date.now();
   try {
     if (accessToken && tokenExpiration && Date.now() < tokenExpiration) {
       return accessToken;
