@@ -120,15 +120,26 @@ export default function SpotifyPlaylist({ playlistId }: { playlistId: string }) 
                 </p>
                 
                 {track.preview_url ? (
-                  <audio 
-                    controls
-                    src={track.preview_url}
-                    className="w-full mt-4 rounded-lg"
-                    onError={(e) => {
-                      console.error('Audio playback error:', e);
-                      alert('Unable to play audio preview');
-                    }}
-                  />
+                  <div className="mt-4">
+                    <audio 
+                      controls
+                      src={track.preview_url}
+                      className="w-full rounded-lg"
+                      onError={(e) => {
+                        console.error('Audio playback error:', e);
+                        alert('Unable to play audio preview');
+                      }}
+                      onPlay={(e: React.SyntheticEvent<HTMLAudioElement>) => {
+                        // Pause all other audio elements
+                        document.querySelectorAll('audio').forEach(audio => {
+                          if (audio !== e.currentTarget) audio.pause();
+                        });
+                      }}
+                    />
+                    <div className="text-xs text-gray-500 mt-1">
+                      Preview may take a moment to load
+                    </div>
+                  </div>
                 ) : (
                   <div className="mt-4 text-sm text-gray-500">
                     No preview available
