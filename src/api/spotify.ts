@@ -71,6 +71,31 @@ export async function getPlaylistTracks(playlistId: string) {
   }
 }
 
+export async function searchTracks(query: string, limit = 10) {
+  try {
+    const token = await getAccessToken();
+    const response = await axios.get('https://api.spotify.com/v1/search', {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      },
+      params: {
+        q: query,
+        type: 'track',
+        limit: limit
+      }
+    });
+    
+    if (!response.data?.tracks?.items) {
+      throw new Error('No tracks found matching your filters');
+    }
+    
+    return response.data.tracks.items;
+  } catch (error) {
+    console.error('Error searching tracks:', error);
+    throw error;
+  }
+}
+
 export async function getPlaylistDetails(playlistId: string) {
   try {
     const token = await getAccessToken();

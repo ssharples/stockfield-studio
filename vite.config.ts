@@ -10,7 +10,11 @@ export default defineConfig(({ mode }) => {
       exclude: ['lucide-react'],
     },
     define: {
-      'process.env': env
+      'process.env': {
+        ...env,
+        NEXT_PUBLIC_SPOTIFY_CLIENT_ID: JSON.stringify(env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID),
+        SPOTIFY_CLIENT_SECRET: JSON.stringify(env.SPOTIFY_CLIENT_SECRET)
+      }
     }
   };
 });
