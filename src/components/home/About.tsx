@@ -13,16 +13,15 @@ export default function About() {
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {/* Scott Sharples */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <div className="relative w-48 h-48 mx-auto mb-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-chrome-light/10 to-chrome-dark/10 rounded-3xl p-8 mb-12"
+        >
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="relative w-48 h-48 flex-shrink-0">
               <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
               <img
                 src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/skool%20profile%20pic.png"
@@ -33,13 +32,23 @@ export default function About() {
                 className="relative rounded-full w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-2xl font-bold mb-2">Scott Sharples</h3>
-            <p className="text-gray-300">
-              Lead engineer with 10+ years experience specializing in hip-hop and electronic music
-            </p>
-          </motion.div>
-
-        </div>
+            
+            <div className="text-center md:text-left">
+              <h3 className="text-2xl font-bold mb-2">Scott Sharples</h3>
+              <p className="text-gray-300 mb-4">
+                27 year old audio engineer with 9 years experience working across rap, R&B, afrobeats and pop.
+                Graduate of Manchester School of Music's prestigious Audio Engineering program.
+              </p>
+              
+              <div className="space-y-2 text-gray-300 text-sm">
+                <p>🎛️ Versatile producer fluent in Ableton, Pro Tools, Logic Pro & FL Studio</p>
+                <p>🎓 Experienced educator teaching production techniques and self-sufficiency</p>
+                <p>🎧 Patient mentor focused on artist comfort and peak performance</p>
+                <p>🔥 Dedicated to delivering radio-ready mixes that elevate artist vision</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         <div className="text-center mb-12">
           <a
@@ -56,7 +65,7 @@ export default function About() {
           <StatsCard
             icon={<Clock className="w-10 h-10" />}
             title="Years of Experience"
-            value="10+"
+            value="9+"
             delay={0.2}
           />
           <StatsCard
