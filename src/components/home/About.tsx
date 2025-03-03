@@ -9,7 +9,7 @@ export default function About() {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">
           <span className="bg-gradient-to-r from-chrome-light to-chrome-dark bg-clip-text text-transparent">
-            Meet the Engineers
+            Lead Engineer
           </span>
         </h2>
 
@@ -39,65 +39,17 @@ export default function About() {
             </p>
           </motion.div>
 
-          {/* Rocco Harris */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <div className="relative w-48 h-48 mx-auto mb-4">
-              <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
-              <img
-                srcSet="
-                  https://via.placeholder.com/400.webp 400w,
-                  https://via.placeholder.com/800.webp 800w,
-                  https://via.placeholder.com/1200.webp 1200w
-                "
-                src="https://via.placeholder.com/800.webp"
-                alt="Rocco Harris"
-                width={800}
-                height={800}
-                loading="lazy"
-                className="relative rounded-full w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">Rocco Harris</h3>
-            <p className="text-gray-300">
-              Mixing specialist with a focus on vocal processing and spatial effects
-            </p>
-          </motion.div>
+        </div>
 
-          {/* Bigheck */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="text-center"
+        <div className="text-center mb-12">
+          <a
+            href="https://api.whatsapp.com/send?phone=447396739414&text=I%27d%20like%20to%20book%20a%20studio%20session"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-8 rounded-full transition-colors duration-200"
           >
-            <div className="relative w-48 h-48 mx-auto mb-4">
-              <div className="absolute -inset-2 bg-gradient-to-r from-chrome-light/20 to-chrome-dark/20 blur-xl rounded-full" />
-              <img
-                srcSet="
-                  https://via.placeholder.com/400.webp 400w,
-                  https://via.placeholder.com/800.webp 800w,
-                  https://via.placeholder.com/1200.webp 1200w
-                "
-                src="https://via.placeholder.com/800.webp"
-                alt="Bigheck"
-                width={800}
-                height={800}
-                loading="lazy"
-                className="relative rounded-full w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">Bigheck</h3>
-            <p className="text-gray-300">
-              Mastering engineer with expertise in loudness optimization and dynamic range control
-            </p>
-          </motion.div>
+            Book Studio Session via WhatsApp
+          </a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mt-12">
@@ -119,6 +71,22 @@ export default function About() {
             value="500+"
             delay={0.6}
           />
+        </div>
+
+        <div className="mt-16 text-center">
+          <h3 className="text-3xl font-bold mb-6">Dry Hire Available</h3>
+          <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+            Experienced engineers can hire our state-of-the-art studio space to work with your own clients. 
+            Includes full access to our premium equipment and monitoring system.
+          </p>
+          <a
+            href="https://wa.link/1cee98"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-8 rounded-full transition-colors duration-200"
+          >
+            Inquire About Space Hire
+          </a>
         </div>
       </div>
     </section>
