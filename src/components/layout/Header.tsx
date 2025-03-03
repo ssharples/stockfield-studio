@@ -37,6 +37,14 @@ export default function Header() {
                 </a>
               ))}
               <a
+                href="https://api.whatsapp.com/send?phone=447396739414&text=I%27d%20like%20to%20book%20a%20studio%20session"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-primary bg-[#25D366] hover:bg-[#128C7E] ml-4"
+              >
+                Book Session
+              </a>
+              <a
                 href="https://www.skool.com/the-sound-society"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,6 +76,15 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="https://api.whatsapp.com/send?phone=447396739414&text=I%27d%20like%20to%20book%20a%20studio%20session"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mx-6 my-4 px-6 py-3 button-primary bg-[#25D366] hover:bg-[#128C7E] text-center rounded-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Book Session
+              </a>
               <a
                 href="https://www.skool.com/the-sound-society"
                 target="_blank"
