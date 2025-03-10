@@ -27,12 +27,12 @@ export default function Hero() {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-chrome-light via-white to-chrome-dark bg-clip-text text-transparent">
-              Transform Your Sound with Professional Audio Engineering
+              Professional Recording Studio & Post-Production
             </span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 glass-panel p-6 backdrop-blur-lg">
-            Expert mixing and mastering services to elevate your music to industry standards.
-            Let's create something extraordinary together.
+            State-of-the-art recording facilities with full mixing and mastering services.
+            Capture your sound in a world-class acoustic environment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -41,7 +41,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="button-primary"
             >
-              Get Unlimited Mix and Masters
+              Book Studio Time Now
             </a>
           </div>
         </motion.div>

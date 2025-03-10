@@ -19,7 +19,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link to="/" className="group">
               <img 
-                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/stockfield%20studio%20logo%202.png?t=2025-01-16T13%3A38%3A32.364Z"
+                src="https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images//stockfield%20studio%20logo.png"
                 alt="Stockfield Studio Logo"
                 className="h-12 w-auto animate-spin-slow transition-opacity group-hover:opacity-90"
               />

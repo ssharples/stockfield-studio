@@ -19,7 +19,6 @@ export interface PortfolioItem {
   title: string;
   artist: string;
   genre: string;
-  spotifyUrl?: string;
   beforeAudio?: string;
   afterAudio?: string;
   image: string;
