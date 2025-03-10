@@ -6,29 +6,24 @@ export interface EquipmentItem {
 
 export const equipmentList: EquipmentItem[] = [
   {
-    name: 'Neumann U47 FET',
-    description: 'Legendary FET condenser microphone for vocals and instruments',
-    category: 'Microphones'
+    name: 'SSL Big Six Mixing Console',
+    description: 'Analog mixing console with built-in EQ and compression',
+    imageUrl: 'https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/ssl%20big%206.jpg?t=2025-01-15T15%3A15%3A37.861Z'
   },
   {
-    name: 'API 1608 Console',
-    description: '32-channel analog console with vintage API sound',
-    category: 'Console'
+    name: 'Neumann U87 Microphone',
+    description: 'Legendary studio condenser microphone',
+    imageUrl: 'https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/neuman.jpg'
   },
   {
-    name: 'B&W 802 D4',
-    description: 'High-resolution studio reference monitors',
-    category: 'Monitoring'
+    name: 'PMC 6-2 Mid Field Monitors',
+    description: 'Professional studio monitors with exceptional clarity',
+    imageUrl: 'https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/pmc%206-2.png?t=2025-01-15T15%3A38%3A56.349Z'
   },
   {
-    name: 'Telefunken ELA M 251',
-    description: 'Tube condenser microphone for pristine vocal capture',
-    category: 'Microphones'
-  },
-  {
-    name: 'Neve 1073DPX',
-    description: 'Dual mic preamp with classic Neve sound',
-    category: 'Preamps'
+    name: 'Apollo x16 Audio Interface',
+    description: '16-channel Thunderbolt audio interface with UAD processing',
+    imageUrl: 'https://mgbgzpvscrnfqnixubtz.supabase.co/storage/v1/object/public/website%20images/apollo%20x16.png?t=2025-01-15T15%3A25%3A19.754Z'
   },
   {
     name: 'UAD Apollo Twin Audio Interface',
